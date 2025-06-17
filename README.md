@@ -16,3 +16,33 @@ This is a full-featured backend service that handles video uploads, queues jobs 
 ---
 
 
+
+---
+
+## ⚙️ Tech Stack
+
+- **Node.js** + **Express**
+- **MongoDB** + **Mongoose**
+- **Bull** + **Redis** for job queueing
+- **Multer** for file uploads
+- **Fluent-FFmpeg** for video processing
+
+---
+
+## 🧪 API Endpoints
+
+### 🔐 Auth
+- `POST /api/auth/register` – Register user
+- `POST /api/auth/login` – Login user
+
+### ⬆️ Upload
+- `POST /api/upload` – Upload a video (authenticated)
+
+### 📊 Status
+- `GET /api/videos/status/:videoId` – Get video processing status
+
+### ⬇️ Download
+- `GET /api/download/:videoId/:format` – Download `mp4` or `webm` formats
+
+---
+
